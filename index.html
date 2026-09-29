@@ -7,22 +7,47 @@
     <link href="./src/output.css" rel="stylesheet" />
   </head>
   <body class="bg-pink-500 =">
-    <main class="flex justify-center min-w-3xl mt-20">
-      <section
-        class="bg-pink-300 max-w-lg w-[500px] h-[400px] rounded-bl-xl rounded-tl-xl flex items-center flex-col py-20"
-      >
-        <h2 class="font-bold text-4xl text-gray-800">PLAYER1</h2>
-        <p class="total-score text-pink-900">0</p>
-        <div class="text-white">
-          <h2>Current</h2>
-          <p>0</p>
-        </div>
-      </section>
-      <section
-        class="bg-pink-400 max-w-lg w-[500px] h-[400px] rounded-br-xl rounded-tr-xl"
-      >
-        <h2 class="font-bold text-4xl text-gray">PLAYER2</h2>
+    <main class="w-full h-[100vh] flex justify-center items-center">
+      <section class="flex justify-center items-center relative">
+        <section
+          class="bg-pink-300 max-w-lg w-[500px] h-[500px] rounded-bl-xl rounded-tl-xl flex items-center flex-col py-20 player-active player-0 player"
+        >
+          <h2
+            class="font-semibold text-4xl text-gray-600 tracking-wide player--0"
+          >
+            PLAYER1
+          </h2>
+          <p class="text-pink-900 text-5xl mt-10" id="score-0">20</p>
+          <div class="current absolute bottom-20">
+            <h2 class="">CURRENT</h2>
+            <p class="text-3xl value_1" id="current-0">0</p>
+          </div>
+        </section>
+        <section class="flex flex-col absolute top-0 items-center">
+          <button class="btn btn-reset">🔃NEW GAME</button>
+          <img
+            src="./imgs/die-5.jpg"
+            alt=""
+            class="h-[110px] w-[90px] top-40 absolute die-1"
+          />
+          <button class="btn mt-[230px] btn-roll">🎲ROLL DICE</button>
+          <button class="btn mt-10 btn-hold">⏹️HOLD</button>
+        </section>
+        <section
+          class="bg-pink-400 max-w-lg w-[500px] h-[500px] rounded-br-xl rounded-tr-xl flex items-center flex-col py-20 player-1 player"
+        >
+          <h2 class="font-semibold text-4xl text-gray-600 player--1">
+            PLAYER2
+          </h2>
+          <p class="text-pink-900 text-5xl mt-10" id="score-1">40</p>
+          <div class="current absolute bottom-20">
+            <h2 class="j">CURRENT</h2>
+            <p class="text-3xl" id="current-1">0</p>
+          </div>
+        </section>
       </section>
     </main>
+
+    <script text="javascript" src="app.js"></script>
   </body>
 </html>

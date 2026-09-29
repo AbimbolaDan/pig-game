@@ -1,1 +1,23 @@
 @import "tailwindcss";
+
+@layer components {
+  .current {
+    @apply text-white bg-pink-900 px-16 py-3.5 rounded-lg flex items-center flex-col gap-3 mt-20;
+  }
+  .btn {
+    @apply bg-white px-10 py-2.5 rounded-full text-gray-500 font-semibold flex items-center justify-center mt-10 opacity-70 hover:opacity-90;
+  }
+  .hide {
+    display: none;
+  }
+  .player-active {
+    background-color: pink !important;
+  }
+  .addstyle {
+    @apply text-red-800 text-xl font-extrabold;
+  }
+  .player-winner {
+    background-color: black !important;
+    color: white !important;
+  }
+}
